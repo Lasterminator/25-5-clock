@@ -1,0 +1,171 @@
+:root {
+  --main-bg-color: #f4f1de;
+  --secondary-bg-color: #f4f1de;
+  --utility-color: #81b29a;
+  --primary-bg-color: #6e9f46;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+button {
+  height: 4em;
+  min-width: 4em;
+  background-color: var(--utility-color);
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+button p {
+  font-size: 1.5em;
+  margin: auto;
+  font-family: inherit;
+  color: white;
+}
+
+button:hover {
+  border: 1px solid var(--secondary-bg-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--primary-bg-color)
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--secondary-bg-color)
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em;
+  margin: 1em;
+  width: 50%;
+  border: 1px solid var(--secondary-bg-color);
+  border-radius: 25px;
+}
+
+.fake-timer-display {
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+.timer-display {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.timer-display p {
+  margin: 1em auto;
+  margin-top: 0;
+  display: block;
+}
+
+.timer-controls {
+  display: flex;
+  flex-direction: row;
+  min-width: 66%;
+}
+
+.timer-controls>* {
+  flex: 1;
+  flex-grow: auto;
+  margin: 0 0.5em;
+}
+
+.settings {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 25px;
+  padding: 2em;
+  margin: 1em;
+  width: 33%;
+  border: 1px solid var(--secondary-bg-color);
+}
+
+.settings-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+
+.settings-inputs>* {
+  flex: 1;
+  flex-grow: auto;
+}
+
+.settings-length {
+  margin: 0 1em;
+}
+
+.settings-length p {
+  margin: auto;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+}
+
+.description a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.description a p {
+  color: #fff;
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+  margin: 0 1em;
+  font-size: 0.6em;
+}
+
+.description img {
+  height: 1em;
+  transform: translateY(1px);
+}
